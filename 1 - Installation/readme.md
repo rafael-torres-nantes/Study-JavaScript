@@ -34,7 +34,7 @@ O index.html é a fundação da sua página web, definindo a estrutura e os elem
 
 > Para facilitar a criação do seu index.html, utilize o atalho "!" + Tab no Visual Studio Code.
 
-```bash
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -61,7 +61,7 @@ O cabeçalho (head) e o corpo (body) são os pilares que sustentam qualquer pág
  - __Metadados__: Inclui informações adicionais como palavras-chave, descrição da página e autor, auxiliando na indexação e SEO da página.
  - __Links para arquivos externos__: Importa estilos CSS, scripts JavaScript e outros recursos que complementam a funcionalidade da página.
 
-```
+```html
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -79,7 +79,7 @@ Assim como o coração bombeia vida, o corpo é onde reside o conteúdo visível
 - __Formulários__: Permitem a interação do usuário com a página, coletando dados, realizando ações e criando uma experiência interativa.
 - __Links__: Conectam a página a outras páginas do seu site ou a sites externos, facilitando a navegação e o acesso a informações adicionais.
 
-```
+```html
 <body>
     <h1> Seja Bem-Vindo !!</h1>
     <script>
@@ -108,7 +108,7 @@ Adiciona interatividade e dinamismo à sua página web, permitindo a manipulaç�
 
 Declaradas com ``let``, armazenam dados na memória do computador e podem ser alteradas ao longo do código.
 
-```
+```JavaScript
 let firstName = 'Rafinha';
 let lastName = 'Torres';
 
@@ -129,7 +129,7 @@ Ambas as convenções são válidas, mas a CamelCase é a mais utilizada na comu
 Declaradas com ``const``, mantêm valores imutáveis após a inicialização, garantindo a integridade do código.
 
 
-```
+```JavaScript
 const price = 20;
 
 console.log(price);
@@ -139,7 +139,7 @@ console.log(price);
 
 O JavaScript insere pontos e vírgula automaticamente em algumas situações, tornando a escrita do código mais flexível. Porém, é importante estar ciente desse comportamento para evitar erros inesperados
 
-```
+```JavaScript
 let withOutSemiCollon = 10
 console.log(withOutSemiCollon)
 ```
@@ -148,14 +148,14 @@ console.log(withOutSemiCollon)
 
 JavaScript possui diversos tipos de dados para representar diferentes tipos de informações:
 
-```
+```JavaScript
 let item = 0;
 console.log(typeof item);
 ```
 
 - __Primitivo :__ Valores simples e imutáveis, como números (ex: 10), strings (ex: "Texto") e valores booleanos (ex: true e false).
 
-```
+```JavaScript
 let itemName = 'Pen';
 let itemPrice = 3;
 let itemAvaiable = true;
@@ -166,7 +166,7 @@ let itemColor = undefined;
 
 #### Explorando conceitos do JavaScript : Objects
 
-```
+```JavaScript
 let pen = {
     itemName: 'Pen',
     itemPrice: 3,
@@ -181,7 +181,7 @@ console.log(pen)
 
 #### Explorando conceitos do JavaScript : Arrays
 
-```
+```JavaScript
 let friends = ['Marcos', 'Silvia', 'Elisia'];
 console.log(friends);
 console.log(friends[0]);
@@ -194,7 +194,7 @@ console.log(friends);
 
 #### Explorando conceitos do JavaScript : Function with out Return
 
-```
+```JavaScript
 function saleStatus(status, total) /*Parâmentros*/ {
     console.log('Transaction ' + status + '! Total Ammount : $' + total);
 }
@@ -206,7 +206,7 @@ saleStatus('Aprroved', 30 ); // Argumentos
 
 Funções são blocos reutilizáveis de código que realizam tarefas específicas. Elas podem receber parâmetros (entradas) e retornar valores (saídas). Isso promove a organização e eficiência do código.
 
-```
+```JavaScript
 function percentage10(price) {
     return price - (price * 10 / 100);
 }
