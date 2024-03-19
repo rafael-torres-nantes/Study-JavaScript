@@ -51,6 +51,38 @@ O index.html é a fundação da sua página web, definindo a estrutura e os elem
 Acima é o exemplo de código que pode ser gerado.
 > \<h1\> : Tags Semânticas para atribuir títulos.
 
+#### Cabeçalho
+
+```
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome da Página</title>
+</head>
+```
+
+#### Body
+```
+<body>
+    <h1> Seja Bem-Vindo !!</h1>
+    <script>
+        console.log('JavaScript Funcionando');
+    </script>
+</body>
+```
+
+![Console Log](assets/console_log.png)
+
+
+Importa o JavaScript no arquivo HTML
+```
+<body>
+    <h1> Seja Bem-Vindo !!</h1>
+    <script src="index.js"></script>
+</body>
+```
+![Import JavaScript on HTML](assets/2-importjsfileonhtml.png)
+
 ### index.js
 Adiciona interatividade e dinamismo à sua página web, permitindo a manipulação de elementos, animações e outros recursos.
 
