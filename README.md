@@ -2,7 +2,7 @@
 
 # JavaScript
 
-Seja bem-vindo !!! O __Repositório de JavaScript__ é um espaço dedicado à documentação e compartilhamento de conhecimentos sobre a linguagem JavaScript. Através da parceria entre a UFMS e a Compass.uol, o repositório reúne estudos, materiais e reflexões sobre as práticas ágeis, com o objetivo de fomentar o aprendizado e a troca de experiências entre a comunidade.
+Seja bem-vindo !!! O __Repositório de JavaScript__ é um espaço dedicado à documentação e compartilhamento de conhecimentos sobre a linguagem de programação: JavaScript. Através da parceria entre a UFMS e a Compass.uol, o repositório reúne estudos, materiais e reflexões sobre as práticas ágeis, com o objetivo de fomentar o aprendizado e a troca de experiências entre a comunidade.
 
 ## 📌 Navegação
 
@@ -13,11 +13,19 @@ Seja bem-vindo !!! O __Repositório de JavaScript__ é um espaço dedicado à do
 
 ## Sobre JavaScript
 
-Os métodos ágeis representam uma filosofia inovadora para o desenvolvimento de software, priorizando flexibilidade, adaptabilidade e entrega frequente de valor. Ao contrário das metodologias tradicionais, como a cascata, que se baseiam em processos lineares e rígidos, os métodos ágeis propõem uma abordagem mais dinâmica e colaborativa, reconhecendo que as necessidades e prioridades podem mudar ao longo do projeto.
+JavaScript (JS) é uma linguagem de programação fundamental para o desenvolvimento web moderno. Ela permite adicionar interatividade e dinamismo às páginas web, tornando-as mais atraentes e fáceis de usar. Com JavaScript, animações fluidas, menus interativos, validações de formulários e até mesmo jogos complexos se tornam realidade, elevando a experiência do usuário a outro nível.
 
-No centro da filosofia ágil está a valorização das pessoas e das interações. A comunicação e a colaboração entre os membros da equipe são essenciais para o sucesso do projeto. O trabalho em conjunto, a capacidade de se adaptar às mudanças e a abertura para feedback constante são características fundamentais para o bom funcionamento de uma equipe ágil.
+Sua presença se estende por toda a World Wide Web, presente em sites, blogs, plataformas de e-commerce, redes sociais e muito mais. É onipresente e fundamental para o funcionamento de diversos recursos que utilizamos diariamente na internet.
 
 Em vez de focar em documentação extensa ou planejamento detalhado, os métodos ágeis enfatizam a entrega frequente de funcionalidades completas e testáveis. Isso permite que o cliente visualize o progresso do projeto e forneça feedback regular, garantindo que o produto final atenda às suas expectativas. O software em funcionamento torna-se a principal ferramenta para comunicação e validação das funcionalidades.
+
+Aprender JavaScript é abrir as portas para um mundo de possibilidades criativas e profissionais. Com essa habilidade, você poderá:
+- Criar interfaces de usuário intuitivas e atraentes: botões que clicam, menus que se abrem, animações que encantam.
+- Garantir a segurança e confiabilidade dos dados: validações de formulários que previnem erros e protegem informações confidenciais.
+- Tornar sua página web mais dinâmica e interativa: carregamento de conteúdo sem recarregar a página, jogos e aplicativos que divertem e engajam.
+- Acessar e manipular o DOM (Document Object Model): altere o conteúdo, estilo e estrutura da página em tempo real, criando experiências personalizadas.
+- Enviar e receber dados do servidor: faça requisições AJAX e atualize a página sem recarregá-la completamente.
+- Explorar uma gama de frameworks e bibliotecas: ferramentas que facilitam o desenvolvimento e expandem as funcionalidades do JavaScript
 
 ## Estrutura do Repositório
 
