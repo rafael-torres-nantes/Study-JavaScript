@@ -12,6 +12,14 @@ Sua arquitetura assíncrona e orientada a eventos garante alta performance e esc
 Acesse o site oficial do Node.JS e baixe a versão mais recente para o seu sistema operacional.
 > Click em NEXT
 
+## Instalando a Extensão : Live Server
+
+O Live Server é uma extensão gratuita para o Visual Studio Code que facilita o desenvolvimento web. Com ele, você pode criar e executar um servidor local diretamente na sua máquina, sem precisar de ferramentas adicionais.
+
+<p align="center">
+<img src="" width="720" height="480">
+</p>
+
 
 ## Os 3 Mosqueteiros da Web
 
@@ -20,14 +28,33 @@ Para iniciar uma aplicação Web, torna-se essencial os seguintes arquivos:
 - __index.js__ : Arquivo que possui instruções _dinâmicas_ da Página Web; 
 - __styles.css__ : Arquivo que possui instruções _estáticas_ para o __visual__ da Página Web;
 
-  ### index.html
-  A base da estrutura da sua página web, definindo elementos como títulos, parágrafos, imagens e links.
+### index.html
+A base da estrutura da sua página web, definindo elementos como títulos, parágrafos, imagens e links.
 
-  ### index.js
-  Adiciona interatividade e dinamismo à sua página web, permitindo a manipulação de elementos, animações e outros recursos.
+Clica "!" e tab você completo (autocomplete)
 
-  ### style.css
-  Responsável pela aparência da sua página web, controlando cores, fontes, layout e outros aspectos visuais.
+```bash
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome da Página</title>
+</head>
+<body>
+    <h1> Seja Bem-Vindo !!</h1>
+</body>
+</html>
+```
+
+Acima é o exemplo de código que pode ser gerado.
+> <h1> : Criar títulos
+
+### index.js
+Adiciona interatividade e dinamismo à sua página web, permitindo a manipulação de elementos, animações e outros recursos.
+
+### style.css
+Responsável pela aparência da sua página web, controlando cores, fontes, layout e outros aspectos visuais.
 
 
 ##
