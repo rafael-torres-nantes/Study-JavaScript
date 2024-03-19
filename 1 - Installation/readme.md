@@ -104,8 +104,116 @@ Para que o código JavaScript seja executado, é necessário importá-lo no arqu
 ### index.js
 Adiciona interatividade e dinamismo à sua página web, permitindo a manipulação de elementos, animações e outros recursos.
 
+#### Explorando conceitos do JavaScript : Variáveis
+
+Declaradas com ``let``, armazenam dados na memória do computador e podem ser alteradas ao longo do código.
+
+```
+let firstName = 'Rafinha';
+let lastName = 'Torres';
+
+console.log(firstName);
+console.log(lastName);
+```
+
+Convenções de nomenclatura: CamelCase vs. Under_scores
+Em JavaScript, existem duas convenções principais para nomear variáveis:
+
+- CamelCase: A primeira letra de cada palavra é maiúscula, exceto a primeira palavra.
+- Under_scores: As palavras são separadas por sublinhados.
+
+Ambas as convenções são válidas, mas a CamelCase é a mais utilizada na comunidade JavaScript.
+
+#### Explorando conceitos do JavaScript : Constantes
+
+Declaradas com ``const``, mantêm valores imutáveis após a inicialização, garantindo a integridade do código.
+
+
+```
+const price = 20;
+
+console.log(price);
+```
+
+#### Explorando conceitos do JavaScript : ASI
+
+O JavaScript insere pontos e vírgula automaticamente em algumas situações, tornando a escrita do código mais flexível. Porém, é importante estar ciente desse comportamento para evitar erros inesperados
+
+```
+let withOutSemiCollon = 10
+console.log(withOutSemiCollon)
+```
+
+#### Explorando conceitos do JavaScript : Tipos de Variáveis
+
+JavaScript possui diversos tipos de dados para representar diferentes tipos de informações:
+
+```
+let item = 0;
+console.log(typeof itemA);
+```
+
+- __Primitivo :__ Valores simples e imutáveis, como números (ex: 10), strings (ex: "Texto") e valores booleanos (ex: true e false).
+
+```
+let itemName = 'Pen';
+let itemPrice = 3;
+let itemAvaiable = true;
+let itemColor = undefined;
+```
+
+- __Referência :__ Armazenam referências a objetos complexos na memória, permitindo modificações. Exemplos: arrays (listas ordenadas) e objetos (coleções de propriedades e valores).
+
+#### Explorando conceitos do JavaScript : Objects
+
+```
+let pen = {
+    itemName: 'Pen',
+    itemPrice: 3,
+    itemAvaiable: true,
+    itemColor:'Red'
+};
+
+pen.itemColor = 'blue';
+
+console.log(pen)
+```
+
+#### Explorando conceitos do JavaScript : Arrays
+
+```
+let friends = ['Marcos', 'Silvia', 'Elisia'];
+console.log(friends);
+console.log(friends[0]);
+console.log(friends[1]);
+console.log(friends[2]);
+
+friends[1] = 'Lucas';
+console.log(friends);
+```
+
+#### Explorando conceitos do JavaScript : Function with out Return
+
+```
+function saleStatus(status, total) /*Parâmentros*/ {
+    console.log('Transaction ' + status + '! Total Ammount : $' + total);
+}
+
+saleStatus('Aprroved', 30 ); // Argumentos
+```
+
+#### Explorando conceitos do JavaScript : Function with Return
+
+Funções são blocos reutilizáveis de código que realizam tarefas específicas. Elas podem receber parâmetros (entradas) e retornar valores (saídas). Isso promove a organização e eficiência do código.
+
+```
+function percentage10(price) {
+    return price - (price * 10 / 100);
+}
+
+console.log(percentage10(100));
+```
+
 ### style.css
 Responsável pela aparência da sua página web, controlando cores, fontes, layout e outros aspectos visuais.
 
-
-##
