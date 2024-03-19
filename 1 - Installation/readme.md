@@ -53,6 +53,14 @@ Acima é o exemplo de código que pode ser gerado.
 
 #### Cabeçalho
 
+O cabeçalho (head) e o corpo (body) são os pilares que sustentam qualquer página web. São como a alma e o coração, trabalhando em conjunto para dar vida ao seu conteúdo online.
+
+ - Codificação de caracteres: Define o idioma da página, geralmente UTF-8, para garantir a exibição correta de acentos e caracteres especiais.
+ - Viewport: Ajusta a página para diferentes dispositivos, desde desktops até smartphones, proporcionando uma experiência otimizada em qualquer tela.
+ - Título: Exibe o título da página na barra de título do navegador e nos resultados de pesquisa, atraindo a atenção dos usuários.
+ - Metadados: Inclui informações adicionais como palavras-chave, descrição da página e autor, auxiliando na indexação e SEO da página.
+ - Links para arquivos externos: Importa estilos CSS, scripts JavaScript e outros recursos que complementam a funcionalidade da página.
+
 ```
 <head>
     <meta charset="UTF-8">
@@ -62,6 +70,15 @@ Acima é o exemplo de código que pode ser gerado.
 ```
 
 #### Body
+
+Assim como o coração bombeia vida, o corpo é onde reside o conteúdo visível da sua página, como:
+
+- Texto: Composto por parágrafos, títulos e listas, o texto transmite informações, ideias e histórias para seus visitantes.
+- Imagens: Enriqucem a experiência visual com fotos, gráficos e outros elementos visuais, tornando a página mais atraente e interessante.
+- Vídeos: Integram vídeos para apresentar informações de forma dinâmica e envolvente, capturando a atenção do usuário.
+- Formulários: Permitem a interação do usuário com a página, coletando dados, realizando ações e criando uma experiência interativa.
+- Links: Conectam a página a outras páginas do seu site ou a sites externos, facilitando a navegação e o acesso a informações adicionais.
+
 ```
 <body>
     <h1> Seja Bem-Vindo !!</h1>
@@ -71,7 +88,7 @@ Acima é o exemplo de código que pode ser gerado.
 </body>
 ```
 
-![Console Log](assets/console_log.png)
+![Console Log](assets/1-console_log.png)
 
 
 Importa o JavaScript no arquivo HTML
