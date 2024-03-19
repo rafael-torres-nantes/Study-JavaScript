@@ -17,7 +17,7 @@ Acesse o site oficial do Node.JS e baixe a versão mais recente para o seu siste
 O Live Server é uma extensão gratuita para o Visual Studio Code que facilita o desenvolvimento web. Com ele, você pode criar e executar um servidor local diretamente na sua máquina, sem precisar de ferramentas adicionais.
 
 <p align="center">
-<img src="" width="720" height="480">
+<img src="https://github.com/rafael-torres-nantes/Study-JavaScript/assets/58231791/c8a08c00-eef0-48b5-b759-16c699ae0848" width="720" height="280">
 </p>
 
 
@@ -29,9 +29,10 @@ Para iniciar uma aplicação Web, torna-se essencial os seguintes arquivos:
 - __styles.css__ : Arquivo que possui instruções _estáticas_ para o __visual__ da Página Web;
 
 ### index.html
-A base da estrutura da sua página web, definindo elementos como títulos, parágrafos, imagens e links.
 
-Clica "!" e tab você completo (autocomplete)
+O index.html é a fundação da sua página web, definindo a estrutura e os elementos que a compõem. É como a planta baixa de uma casa, que determina a disposição dos cômodos e a organização do espaço.
+
+> Para facilitar a criação do seu index.html, utilize o atalho "!" + Tab no Visual Studio Code.
 
 ```bash
 <!DOCTYPE html>
@@ -48,7 +49,7 @@ Clica "!" e tab você completo (autocomplete)
 ```
 
 Acima é o exemplo de código que pode ser gerado.
-> <h1> : Criar títulos
+> \<h1\> : Tags Semânticas para atribuir títulos.
 
 ### index.js
 Adiciona interatividade e dinamismo à sua página web, permitindo a manipulação de elementos, animações e outros recursos.
