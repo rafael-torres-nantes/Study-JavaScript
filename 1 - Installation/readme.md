@@ -91,7 +91,8 @@ Assim como o coração bombeia vida, o corpo é onde reside o conteúdo visível
 ![Console Log](assets/1-console_log.png)
 
 
-Importa o JavaScript no arquivo HTML
+Para que o código JavaScript seja executado, é necessário importá-lo no arquivo HTML. Para isso, utilize a tag \<script\> com o atributo src apontando para o arquivo JavaScript. No exemplo, o arquivo JavaScript se chama index.js. 
+
 ```
 <body>
     <h1> Seja Bem-Vindo !!</h1>
