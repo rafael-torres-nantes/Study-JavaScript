@@ -6,7 +6,7 @@ Seja bem-vindo !!! O __Repositório de JavaScript__ é um espaço dedicado à do
 
 ## 📌 Navegação
 
-- [📝 Sobre os Métodos Ágeis](#introdução)
+- [📝 Sobre o JavaScript](#introdução)
 - [📁 Estrutura do Repositório](#estrutura-do-repositorio)
 - [💻 Desenvolvimento](#desenvolvimento)
   - [🔧 Ferramentas e tecnologias utilizadas](#ferramentas-e-tecnologias-utilizadas)
