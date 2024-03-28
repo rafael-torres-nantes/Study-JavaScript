@@ -1,7 +1,5 @@
 # Study-JavaScript
 
-# JavaScript
-
 Seja bem-vindo !!! O __Repositório de JavaScript__ é um espaço dedicado à documentação e compartilhamento de conhecimentos sobre a linguagem de programação: JavaScript. Através da parceria entre a UFMS e a Compass.uol, o repositório reúne estudos, materiais e reflexões sobre as práticas ágeis, com o objetivo de fomentar o aprendizado e a troca de experiências entre a comunidade.
 
 ## 📌 Navegação
