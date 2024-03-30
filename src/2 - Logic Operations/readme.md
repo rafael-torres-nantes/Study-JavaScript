@@ -1,108 +1,184 @@
-# JavaScript
+# JavaScript: Operações e Estruturas de Controle
 
-## Explorando lógica de Programação : Operadores Aritiméticos
+Neste guia, vamos explorar operações aritméticas, operadores de incremento, operadores de atribuição, operadores de comparação, operador ternário, operadores lógicos, declarações condicionais e estruturas de repetição em JavaScript.
 
-Neste guia, exploraremos os diversos operadores em JavaScript, desde os básicos de matemática até os mais avançados de comparação e manipulação de strings.
+## Definição de Variáveis
+Vamos começar definindo algumas variáveis e realizando operações aritméticas com elas.
 
-### Operadores matemáticos 
+```javascript
+// Definição de variáveis
+let num1 = 5
+let num2 = 2
 
-- __Soma (+)__: Soma dois números,
-
-```JavaScript
-let num1 = 5;
-let num2 = 2;
-
-console.log("Soma: " + (num1 + num2)); // Resultado: 7
+// Operações aritméticas
+console.log("Soma: "+ (num1 + num2))
+console.log("Subtração: "+ (num1 - num2)) // Corrigido para subtração
+console.log("Multiplicação: "+ (num1 * num2))
+console.log("Divisão: "+ (num1 / num2))
+console.log("Exponenciação: "+ (num1 ** num2))
+console.log("Resto: "+ (num1 % num2))
 ```
 
-- __Subtração (-)__: Subtrai dois números.
+## Operadores de Incremento
+Vamos explorar o comportamento dos operadores de incremento antes e depois do valor.
 
-```JavaScript
-console.log("Subtração: " + (num1 - num2)); // Resultado: 3
-```
-- __Multiplicação (*-*)__: Multiplica dois números.
+```javascript
+// Operador de Incremento: Antes do Valor
+let total = num1 + num2
+console.log("Total do ++X: " + (++total))
+console.log("Total do --X: " + (--total))
 
-```JavaScript
-console.log("Multiplicação: " + (num1 * num2)); // Resultado: 10
-```
-- __Divisão (/)__: Divide um número pelo outro.
-
-```JavaScript
-console.log("Divisão: " + (num1 / num2)); // Resultado: 2.5
-```
-- __Resto (%)__: Retorna o resto da divisão de um número pelo outro.
-
-```JavaScript
-console.log("Resto: " + (num1 % num2)); // Resultado: 1
+// Operador de Incremento: Depois do Valor
+total = num1 + num2
+console.log("Total do X++: " + (total++))
+console.log("Total do X--: " + (total--))
 ```
 
-### Operadores de Incrememnto 
+## Operadores de Atribuição
+Vamos entender como funcionam os operadores de atribuição em JavaScript.
 
-- __Incremento (++)__: Incrementa o valor de uma variável em 1.
+```javascript
+// Operador de Atribuição 
+let num = 0
+num += 1
+console.log("Total: " + num)
+num -= 1
+console.log("Total: " + num)
+```
 
-- __Decremento (--)__: Decrementa o valor de uma variável em 1.
+## Operadores de Comparação
+Aqui estão algumas comparações entre variáveis para entendermos os operadores de comparação.
 
-> Operador de Incremento sntes do Valor significa que incrementa antes do uso da variavel
+```javascript
+// Operador de Comparação
+console.log(num1 > num2)
+console.log(num1 < num2)
+console.log(num1 >= num2)
+console.log(num1 <= num2)
+console.log(num1 == num2)
+console.log(num1 != num2)
 
-```JavaScript
-let total = num1 + num2;
+console.log('1' == '1')
+console.log('1' == 1)
 
-// Incrementa antes do uso da variável
-console.log("Total do ++X: " + (++total)); // Resultado: 8
+console.log('1' === 1)
+console.log('1' === '1')
+```
 
-// Decrementa antes do uso da variável
-console.log("Total do --X: " + (--total)); // Resultado: 7
+Para continuar, clique [aqui](#operador-ternário).
 
-total = num1 + num2;
+## Operador Ternário
+Vamos utilizar o operador ternário para definir uma mensagem com base em uma condição.
 
-// Incrementa após o uso da variável
-console.log("Total do X++: " + (total++)); // Resultado: 7
+```javascript
+// Operador Ternário
+let driver = 90
+let speed = driver > 100 ? 'Above' : 'Below'
+console.log(speed)
+```
 
-// Decrementa após o uso da variável
-console.log("Total do X--: " + (total--)); // Resultado: 6
+## Operadores Lógicos
+Agora, vamos explorar os operadores lógicos em JavaScript.
 
-``` 
+```javascript
+// Operador Lógico
+let temIdadeMinima = true
+let temTituloDeEleitor = true
 
-### Operadores de Comparação 
+let podeVotar = temIdadeMinima && temTituloDeEleitor
+console.log('Pode votar: ' + podeVotar)
 
-- __Maior que (>)__: Verifica se um número é maior que outro.
+let temAlgumDosDois = temIdadeMinima || temTituloDeEleitor
+let possoViajar = !podeVotar
+console.log('Posso viajar: ' + possoViajar)
 
-- __Menor que (<)__: Verifica se um número é menor que outro.
+let corCliente = 'white'
+let corEstoque = 'black'
+let corVendida = corCliente || corEstoque
+console.log('Cor vendida: ' + corVendida)
+```
 
-- __Maior ou igual a (>=)__: Verifica se um número é maior ou igual a outro.
+## Declarações Condicionais
+Aqui estão exemplos de declarações condicionais em JavaScript.
 
-- __Menor ou igual a (<=)__: Verifica se um número é menor ou igual a outro.
+```javascript
+// Declarações Condicionais
+let velCarro = 110
+if (velCarro >= 110) {
+    console.log('Driving too fast')
+} else if (velCarro > 40 && velCarro < 110) {
+    console.log('Ok!')
+} else {
+    console.log('Driving too slow')
+}
+```
 
-- __Igual a (==)__: Verifica se dois valores são iguais.
+Para continuar, clique [aqui](#estrutura-de-repetição).
 
-- __Diferente de (!=)__: Verifica se dois valores são diferentes.
+## Estrutura de Repetição - For
+Vamos usar um loop for para imprimir números de 0 a 9.
 
-> Operador de Incremento sntes do Valor significa que incrementa antes do uso da variavel
+```javascript
+// Estrutura de repetição - For
+for(let i = 0; i < 10; i++) {
+    console.log('Numero: ', i)
+}
+```
 
-```JavaScript
-console.log(num1 > num2); // true
-console.log(num1 < num2); // false
-console.log(num1 >= num2); // true
-console.log(num1 <= num2); // false
-console.log(num1 == num2); // false
-console.log(num1 != num2); // true
+Para continuar, clique [aqui](#estrutura-de-repetição---while).
 
-// Strings
-console.log('1' == '1'); // true
-console.log('1' == 1); // true
+## Estrutura de Repetição - While
+Agora, vamos usar um loop while para imprimir números de 0 a 10.
 
-// Tipos diferentes
-console.log('1' === 1); // false
-console.log('1' === '1'); // true
-``` 
+```javascript
+// Estrutura de repetição - While
+let i = 0
+while (i <= 10) {
+    console.log('Numero: ', i)
+    i += 1 
+}
+```
 
-### Operador Ternário 
+Para continuar, clique [aqui](#estrutura-de-repetição---do-while).
 
-O operador ternário é uma forma concisa de escrever uma instrução condicional.
+## Estrutura de Repetição - Do-While
+Por fim, vamos usar um loop do-while para imprimir números de 0 a 10.
 
-```JavaScript
-let driver = 90;
-let speed = driver > 100 ? 'Acima' : 'Abaixo';
+```javascript
+// Estrutura de repetição - Do-While
+i = 0
+do {
+    console.log('Numero: ', i)
+    i += 1 
+} while (i <= 10)
+```
 
-console.log(speed); // Resultado: 'Acima'
-``` 
+Para continuar, clique [aqui](#for-in-loop).
+
+## For-in Loop
+Aqui está um exemplo de loop for-in para iterar sobre propriedades de um objeto.
+
+```javascript
+// For in loop
+const myCar = {
+    model : 'BMW',
+    year : 2023,
+    km : 12000
+}
+for (let i in myCar) {
+    console.log(i, myCar[i])
+}
+```
+
+Para continuar, clique [aqui](#for-of-loop).
+
+## For-of Loop
+Por fim, vamos usar um loop for-of para iterar sobre elementos de um array.
+
+```javascript
+// For of loop
+const friends = ['Carlos', 'Lucas', 'Murilo']
+for (let i of friends) {
+    console.log(i)
+}
+```
