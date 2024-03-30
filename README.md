@@ -1,12 +1,10 @@
 # Study-JavaScript
 
-# JavaScript
-
 Seja bem-vindo !!! O __Repositório de JavaScript__ é um espaço dedicado à documentação e compartilhamento de conhecimentos sobre a linguagem de programação: JavaScript. Através da parceria entre a UFMS e a Compass.uol, o repositório reúne estudos, materiais e reflexões sobre as práticas ágeis, com o objetivo de fomentar o aprendizado e a troca de experiências entre a comunidade.
 
 ## 📌 Navegação
 
-- [📝 Sobre os Métodos Ágeis](#introdução)
+- [📝 Sobre o JavaScript](#introdução)
 - [📁 Estrutura do Repositório](#estrutura-do-repositorio)
 - [💻 Desenvolvimento](#desenvolvimento)
   - [🔧 Ferramentas e tecnologias utilizadas](#ferramentas-e-tecnologias-utilizadas)
@@ -20,12 +18,12 @@ Sua presença se estende por toda a World Wide Web, presente em sites, blogs, pl
 Em vez de focar em documentação extensa ou planejamento detalhado, os métodos ágeis enfatizam a entrega frequente de funcionalidades completas e testáveis. Isso permite que o cliente visualize o progresso do projeto e forneça feedback regular, garantindo que o produto final atenda às suas expectativas. O software em funcionamento torna-se a principal ferramenta para comunicação e validação das funcionalidades.
 
 Aprender JavaScript é abrir as portas para um mundo de possibilidades criativas e profissionais. Com essa habilidade, você poderá:
-- Criar interfaces de usuário intuitivas e atraentes: botões que clicam, menus que se abrem, animações que encantam.
-- Garantir a segurança e confiabilidade dos dados: validações de formulários que previnem erros e protegem informações confidenciais.
-- Tornar sua página web mais dinâmica e interativa: carregamento de conteúdo sem recarregar a página, jogos e aplicativos que divertem e engajam.
-- Acessar e manipular o DOM (Document Object Model): altere o conteúdo, estilo e estrutura da página em tempo real, criando experiências personalizadas.
-- Enviar e receber dados do servidor: faça requisições AJAX e atualize a página sem recarregá-la completamente.
-- Explorar uma gama de frameworks e bibliotecas: ferramentas que facilitam o desenvolvimento e expandem as funcionalidades do JavaScript
+- __Criar interfaces de usuário intuitivas e atraentes:__ botões que clicam, menus que se abrem, animações que encantam.
+- __Garantir a segurança e confiabilidade dos dados:__ validações de formulários que previnem erros e protegem informações confidenciais.
+- __Tornar sua página web mais dinâmica e interativa:__ carregamento de conteúdo sem recarregar a página, jogos e aplicativos que divertem e engajam.
+- __Acessar e manipular o DOM (Document Object Model):__ altere o conteúdo, estilo e estrutura da página em tempo real, criando experiências personalizadas.
+- __Enviar e receber dados do servidor:__ faça requisições AJAX e atualize a página sem recarregá-la completamente.
+- __Explorar uma gama de frameworks e bibliotecas:__ ferramentas que facilitam o desenvolvimento e expandem as funcionalidades do JavaScript
 
 ## Estrutura do Repositório
 
