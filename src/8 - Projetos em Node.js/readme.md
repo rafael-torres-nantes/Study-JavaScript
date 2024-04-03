@@ -164,3 +164,135 @@ app.get('/', (req, res) => {
 //Jobs routes 
 app.use('/jobs', require('./routes/jobs'))
 ```
+
+## Post JSON no Banco de Dados com POSTMAN
+
+Para inserir dados no banco via POST com JSON, siga estes passos no Postman:
+
+- Selecione o método `POST` na barra de ferramentas do Postman.
+- Insira a URL da sua API que lida com o POST. Por exemplo, `http://localhost:3000/api/jobs`
+- Na aba `Params`, adicione uma nova chave `Content-Type` com o valor `application/json`. Isso indica que o corpo da sua requisição é um objeto JSON.
+- Na aba `Body`, selecione raw e insira os dados que você deseja enviar em formato JSON. Por exemplo:
+
+```json
+{
+  "title": "Desenvolvedor Node.js",
+  "description": "Responsável pelo desenvolvimento de novas funcionalidades...",
+  "salary": "5000",
+  "company": "Tech Ltda",
+  "email": "rh@techltda.com",
+  "new_job": 1
+}
+```
+
+Pressione o botão Send para enviar a requisição.
+A imagem abaixo ilustra como configurar o Postman para enviar um JSON ao seu servidor:
+
+<p align="center">
+    <img src="/assets/ProjectNode/dbbrowser_json.png" width="480" height="320">
+</p>
+
+## BootStrap
+
+O Bootstrap é um framework front-end que ajuda a criar interfaces de usuário responsivas e móveis rapidamente. Para utilizá-lo, inclua os links CDN do Bootstrap no seu arquivo HTML.
+
+
+```html
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Finder</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
+```
+
+Isso garantirá que seu projeto tenha um design atraente e responsivo sem muito esforço.
+
+## Criando view com HandleBars
+
+Handlebars é uma engine de template que permite criar páginas HTML dinâmicas com facilidade. Para configurá-lo no Express:
+
+- Instale o `express-handlebars` com o comando `npm install express-handlebars`.
+
+- Configure o Express para usar o Handlebars como sua view engine
+
+```js
+const exphbs = require('express-handlebars');
+const path = require('path');
+```
+
+```js
+// Configuração do Handlebars
+app.set('views', path.join(__dirname, 'views'));
+app.engine('handlebars', exphbs.engine({defaultLayout: 'main'}));
+app.set('view engine', 'handlebars');
+
+// Pasta estática
+app.use(express.static(path.join(__dirname, 'public')))
+```
+Isso permite que você use o Handlebars para renderizar suas views, organizando melhor o projeto e facilitando a manutenção do código.
+
+## Routes para a outra aba
+
+Para adicionar uma nova página ou aba no seu aplicativo, crie uma nova rota. Por exemplo, para adicionar uma página que permite adicionar novas oportunidades de emprego:
+
+
+```js
+router.get('/add', (req, res) => {
+  res.render('add')
+})
+```
+
+## Filtros
+
+A rota do Express serve tanto para exibir todos os empregos quanto para filtrar esses empregos com base em um termo de busca. Ela verifica a presença de um parâmetro de consulta, realiza a busca apropriada no banco de dados, e envia os resultados para uma view que irá exibi-los para o usuário.
+
+Esse padrão é bastante útil para implementar funcionalidades de busca em aplicações web, permitindo uma navegação mais eficiente e direcionada aos interesses do usuário
+
+```js
+const Job = require('./models/Job')
+
+// routes
+app.get('/', (req, res) => {
+
+    let search = req.query.job;
+    let query  = '%'+search+'%'; // PH -> PHP, Word -> Wordpress, press -> Wordpress
+  
+    if(!search) {
+      Job.findAll({order: [
+        ['createdAt', 'DESC']
+      ]})
+      .then(jobs => {
+    
+        res.render('index', {
+          jobs
+        });
+    
+      })
+      .catch(err => console.log(err));
+    } else {
+      Job.findAll({
+        where: {title: {[Op.like]: query}},
+        order: [
+          ['createdAt', 'DESC']
+      ]})
+      .then(jobs => {
+        console.log(search);
+        console.log(search);
+    
+        res.render('index', {
+          jobs, search
+        });
+    
+      })
+      .catch(err => console.log(err));
+    }
+})
+
+```
