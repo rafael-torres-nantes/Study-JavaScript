@@ -31,6 +31,11 @@ Agora, você pode iniciar o servidor usando:
 npm run dev
 ```
 
+Caso você deseja instalar os pacotes e dependências do projeto:
+```bash
+npm install
+```
+
 ### Configuração do Sequelize
 
 O Sequelize é um ORM (Object-Relational Mapping) para Node.js, que facilita a interação com o banco de dados SQL. Primeiro, configure a conexão com o banco de dados em um arquivo `db.js`:
