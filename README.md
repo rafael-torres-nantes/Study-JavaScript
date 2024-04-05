@@ -32,9 +32,9 @@ Neste repositório, você encontrará 3 pastas, sendo elas:
 - 1 arquivo README com o detalhes sobre as informações da trilha;
 
 Cada pasta contém os arquivos produzidos durante o processo de aprendiza, podendo incluir:
-- __README.md__ : Arquivo de texto que contém detalhes sobre o projeto;
-- __src__ : Pasta que contém os códigos utilizados durante os estudos; 
 - __assets__ : Pasta que contém imagens e documentações do processo de aprendizado;
+- __src__ : Pasta que contém os códigos utilizados durante os estudos; 
+- __README.md__ : Arquivo de texto que contém detalhes sobre o projeto;
 
 
 ## Desenvolvimento
