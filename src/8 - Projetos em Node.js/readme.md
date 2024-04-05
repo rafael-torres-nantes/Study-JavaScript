@@ -36,6 +36,52 @@ Caso você deseja instalar os pacotes e dependências do projeto:
 npm install
 ```
 
+
+## Projeto com Estrutura MVC em Node.js: Organização de Diretórios
+
+Este projeto segue a arquitetura MVC (Model, View, Controller) para organizar e modularizar o código, tornando-o mais fácil de entender, manter e escalar. A estrutura de diretórios é projetada de acordo com as melhores práticas de desenvolvimento.
+
+#### controllers
+
+Os arquivos no diretório `controllers` são responsáveis por gerenciar o fluxo de informações entre o frontend e o backend. Eles realizam a chamada dos serviços (localizados em `services`), que por sua vez utilizam os endpoints da API para obter ou manipular os dados necessários para alimentar a aplicação frontend.
+
+#### models
+
+O diretório `models` contém os arquivos responsáveis pela construção dos objetos que representam os dados manipulados pela aplicação. Esses modelos são construídos a partir dos dados recebidos nas requisições à API, com o objetivo de organizar e estruturar os dados de forma coesa.
+
+#### routes
+
+As rotas da aplicação são definidas no diretório `routes`. Elas especificam como as requisições HTTP são tratadas e direcionadas para os controladores adequados. Essas rotas são o ponto de entrada para a lógica de negócios da aplicação.
+
+#### services
+
+Os serviços, localizados no diretório `services`, encapsulam a lógica de negócios da aplicação. Eles são responsáveis por realizar operações específicas nos dados, como buscar informações do banco de dados, processar dados de entrada e executar operações de negócio complexas.
+
+#### views
+
+No diretório `views`, estão localizadas as páginas do frontend que consomem os dados fornecidos pelo backend. Aqui, as informações recebidas das requisições são apresentadas ao usuário de forma agradável e compreensível.
+
+### Padrões de Nomenclatura
+
+- __Idioma Padrão__: O idioma padrão das classes, funções e variáveis é o inglês, seguindo as melhores práticas de desenvolvimento.
+
+- __Nome dos Arquivos em CamelCase__: Os nomes dos arquivos MVC são escritos em CamelCase para garantir consistência e clareza no código. Por exemplo, `SearchTitleController.js`, `MovieTitleModel.js`, etc.
+
+
+## Criando Banco de Dados
+
+O banco de dados é uma peça fundamental em muitos projetos de software, incluindo aplicações web e móveis. Ele é responsável por armazenar, organizar e gerenciar os dados utilizados pela aplicação. Existem vários tipos de banco de dados, cada um com suas próprias características e casos de uso específicos.
+
+### Conceitos Básicos
+
+- __Dados__: São informações armazenadas em um banco de dados, organizadas em tabelas e representadas por registros.
+
+- __Tabela__: Estrutura fundamental de um banco de dados relacional, composta por linhas (registros) e colunas (campos). Cada tabela representa uma entidade específica, como usuários, produtos, pedidos, etc.
+
+- __Registro__: Também conhecido como linha, é uma entrada em uma tabela que contém dados sobre uma única instância da entidade representada pela tabela.
+
+- __Campo__: Também conhecido como coluna, é uma categoria de dados em uma tabela que contém informações específicas sobre cada registro.
+
 ### Configuração do Sequelize
 
 O Sequelize é um ORM (Object-Relational Mapping) para Node.js, que facilita a interação com o banco de dados SQL. Primeiro, configure a conexão com o banco de dados em um arquivo `db.js`:
@@ -68,7 +114,7 @@ db
 
 ```
 
-##  Configurando o Banco de Dados
+### Configurando o Banco de Dados
 
 Para visualizar e manipular o banco de dados SQLite, você pode usar o [DB Browser](https://sqlitebrowser.org/). Abra o arquivo do banco de dados do projeto (`./db/app.db`) no DB Browser e crie uma tabela para armazenar os detalhes das oportunidades de emprego.
 
@@ -79,6 +125,7 @@ Para visualizar e manipular o banco de dados SQLite, você pode usar o [DB Brows
 <p align="center">
     <img src="/assets/ProjectNode/dbbrowser_table.png" width="480" height="320">
 </p>
+
 
 ## Criando um Model
 
