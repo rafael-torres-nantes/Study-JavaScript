@@ -41,6 +41,15 @@ npm install
 
 Este projeto segue a arquitetura MVC (Model, View, Controller) para organizar e modularizar o código, tornando-o mais fácil de entender, manter e escalar. A estrutura de diretórios é projetada de acordo com as melhores práticas de desenvolvimento.
 
+| Diretório   | Descrição  | 
+|-------------- | ----------------------------------------------------------------------------------------------------------- |
+| controllers | Gerenciam o fluxo de informações entre o frontend e o backend, realizando chamadas aos serviços.           |
+| models      | Responsáveis pela construção dos objetos que representam os dados manipulados pela aplicação.             |
+| routes      | Definem as rotas da aplicação, especificando como as requisições HTTP são tratadas e direcionadas.       |
+| services    | Encapsulam a lógica de negócios da aplicação, realizando operações específicas nos dados.                |
+| views       | Contêm as páginas do frontend que consomem os dados fornecidos pelo backend, apresentando-os ao usuário. |
+
+
 #### controllers
 
 Os arquivos no diretório `controllers` são responsáveis por gerenciar o fluxo de informações entre o frontend e o backend. Eles realizam a chamada dos serviços (localizados em `services`), que por sua vez utilizam os endpoints da API para obter ou manipular os dados necessários para alimentar a aplicação frontend.
