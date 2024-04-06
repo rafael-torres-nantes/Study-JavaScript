@@ -10,6 +10,11 @@ Para começar, instale as dependências necessárias usando o npm. Execute os se
 ```bash
 npm install express express-handlebars body-parser sequelize sqlite3 
 ```
+
+Caso você deseja instalar os pacotes e dependências do projeto de outros devs:
+```bash
+npm install
+```
  
 ###  Instalação do Nodemon
 
@@ -30,12 +35,6 @@ Agora, você pode iniciar o servidor usando:
 ```bash
 npm run dev
 ```
-
-Caso você deseja instalar os pacotes e dependências do projeto:
-```bash
-npm install
-```
-
 
 ## Projeto com Estrutura MVC em Node.js: Organização de Diretórios
 
