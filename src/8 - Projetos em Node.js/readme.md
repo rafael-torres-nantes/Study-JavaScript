@@ -4,6 +4,10 @@ Este projeto implementa um aplicativo CRUD (Create, Read, Update, Delete) simple
 
 ##  Instalação e Configuração
 
+```bash
+npm init
+```
+
 ### Instalação das Dependências
 
 Para começar, instale as dependências necessárias usando o npm. Execute os seguintes comandos no terminal:
